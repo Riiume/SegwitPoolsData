@@ -11,4 +11,6 @@ Written for Python 3.
 ['BitFury', 'BTCC%20Pool', 'BitClub%20Network', 'shawnp0wers']
 ```
 
-
+#### Web Dependencies:
++ Blockchain.info
++ api.qbit.ninja
