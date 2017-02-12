@@ -1,4 +1,4 @@
-# For Python 3 or higher
+# For Python 3
 import urllib.request, json, collections  
 
 listMiningPoolNamesFormatted = ['AntPool',
@@ -68,7 +68,7 @@ def getLatestBlockOfPool(poolNameFormatted):
     listUnfilteredBlocks = getURLasJSONSequence(url)
     listBlocks = [y for y in listUnfilteredBlocks['blocks'] if y['main_chain']]
     if len(listBlocks) > 0:
-        return listBlocks[0]
+        return listBlocks[0]['height']
     else:
         return 0
 
@@ -77,11 +77,11 @@ def getLatestBlockOfPool(poolNameFormatted):
 listPoolsFirstBlocks = []
 
 for pool in listMiningPoolNamesFormatted: 
+    iLatestBlockHeight = 0
     try:
-        latestBlock = getLatestBlockOfPool(pool)
+        iLatestBlockHeight = getLatestBlockOfPool(pool)
     except:
         continue
-    iLatestBlockHeight = latestBlock['height']
     if (iLatestBlockHeight > 0):
         tupleBlock = (pool, iLatestBlockHeight)
         listPoolsFirstBlocks.append(tupleBlock)
