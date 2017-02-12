@@ -1,3 +1,4 @@
+# For Python 3 or higher
 import urllib.request, json, collections  
 
 listMiningPoolNamesFormatted = ['AntPool',
