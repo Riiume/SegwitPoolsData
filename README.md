@@ -21,3 +21,6 @@ Written for Python 3.
 + Blockchain.info
 + api.qbit.ninja
 + btc.blockr.io/api
+
+#### SegWit FAQs
+https://segwit.org/
