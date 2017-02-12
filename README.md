@@ -1,6 +1,8 @@
 # SegwitPoolsData
 Pull data regarding pools signaling support for SegWit
 
+Written for Python 3.
+
 #### Example usages:
 
 ```bash
