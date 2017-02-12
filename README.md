@@ -6,13 +6,13 @@ Written for Python 3.
 #### Example usages:
 
 ```bash
-> python PrintSegwitSupportingPoolsLast80.py
+> ./PrintSegwitPools.py
 
 ['BitFury', 'BTCC%20Pool', 'BitClub%20Network', 'shawnp0wers']
 ```
 
 ```bash
-> python PrintSegwitPoolsBtcAddresses.py
+> ./PrintSegwitPools.py -a
 
 [('BitFury', '1GbVUSW5WJmRCpaCJ4hanUny77oDaWW4to'), ('BTCC%20Pool', '152f1muMCNa7goXYhYAQC61hxEgGacmncB'), ('BitClub%20Network', '155fzsEBHy9Ri2bMQ8uuuR3tv1YzcDywd4')]
 ```
